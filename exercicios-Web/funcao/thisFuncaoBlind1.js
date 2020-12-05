@@ -13,6 +13,10 @@ const pessoa2 = pessoa.falar;
 pessoa2(); // conflito entre paradigmas: funcional e OO
 
 
-// função bind() resolve esse tipo de problema com referencia no contexto do js
+// função bind() resolve esse tipo de conflito
+// bind recebe um objeto com argumento no qual vc queira
+// que seja resolvido o this
+// o bind é o metodo responsavel por amarrar o objeto dono da execução no momento
+// o bind retorna outra função que vai amarrar o objeto this
 const pessoa3 = pessoa.falar.bind(pessoa);
 pessoa3()
