@@ -16,11 +16,6 @@ No caso de a nota ser 38,
 o arredondamento é possível pois atingirá 40 e o aluno será aprovado.
 */
 
-//criar uma funcao
-// notas dos alunos de 0 a 100
-// se a nota do aluno for menor de 40 é reprovado
-
-
 function classificacao(nota) {
 
   if(nota < 37) {
