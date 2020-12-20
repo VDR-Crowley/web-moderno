@@ -16,11 +16,21 @@ function caracteriscasFisicas(nome, idade, genero, porteFisico, corPele, corCabe
   }
 }
 
-let caracteristica = caracteriscasFisicas('Geralt', '19', 'Masculino', 'Sarado', 'Branco', 'Branco');
-
+let caracteristicaFisicas = caracteriscasFisicas('Geralt', '19', 'Masculino', 'Sarado', 'Branco', 'Branco');
 const personagemPrincipal = [ ];
-
-personagemPrincipal.push(caracteristica);
-
-
+personagemPrincipal.push(caracteristicaFisicas);
 console.log(personagemPrincipal[0]);
+
+function criaAtributos() {
+
+  this.roupas = (camisa, luvas, calsa, botas) => {
+    return{ camisa, luvas, calsa, botas }
+  }
+
+}
+
+const roupa = new criaAtributos();
+
+let novoestilo = roupa.roupas(true, false, true, false);
+
+console.log(novoestilo)
