@@ -1,6 +1,6 @@
 function invertName(nome) {
   
-  let inverteString = nome.split('').reverse().join(' ');
+  let inverteString = nome.split('').reverse().join('');
   
   return inverteString;
 }
